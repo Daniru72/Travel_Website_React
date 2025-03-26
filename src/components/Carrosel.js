@@ -14,7 +14,7 @@ import "swiper/css/effect-coverflow";
 
 function Carrosel() {
   return (
-    <div style={{ marginTop: "50px", padding: "20px" }}>
+    <div style={{ marginTop: "50px", padding: "10px" }}>
       <h1 style={{ textAlign: "center" , marginBottom: "20px"}}>Trending International Destinations</h1>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]}
@@ -25,7 +25,7 @@ function Carrosel() {
         effect="coverflow"
         centeredSlides={true}
         loop={true}
-        slidesPerView={3} // Default for larger screens
+        slidesPerView={4} // Default for larger screens
         breakpoints={{
           // Adjust slidesPerView based on screen width
           320: { slidesPerView: 1 }, // Mobile
@@ -185,6 +185,44 @@ function Carrosel() {
      Egypt
     </div>
         </SwiperSlide>
+
+
+        <SwiperSlide>
+          <img src="https://plus.unsplash.com/premium_photo-1661964177687-57387c2cbd14?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="slide_image"
+           style={{
+            width: "100%",
+            height: "auto",
+            borderRadius: "15px", // Rounded corners
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Subtle shadow
+            transition: "transform 0.3s ease, box-shadow 0.3s ease", // Smooth hover effect
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "scale(1.05)"; // Slight zoom on hover
+            e.currentTarget.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.3)"; // Enhanced shadow on hover
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "scale(1)"; // Reset zoom
+            e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)"; // Reset shadow
+          }} 
+          />
+           <div
+      style={{
+        position: "absolute",
+        top: "50%", // Center vertically
+        left: "50%", // Center horizontally
+        transform: "translate(-50%, -50%)", // Adjust for centering
+        color: "white", // Text color
+        fontSize: "1.5rem", // Text size
+        fontWeight: "bold", // Bold text
+        textShadow: "0 2px 4px rgb(0, 0, 0)", // Add shadow to text for better visibility
+        textAlign: "center", // Center align text
+      }}
+    >
+     Japan
+    </div>
+        </SwiperSlide>
+
+
       </Swiper>
     </div>
   );

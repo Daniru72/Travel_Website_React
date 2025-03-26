@@ -4,6 +4,8 @@ import Hero from '../components/Hero';
 import Carrosel from '../components/Carrosel';
 import Destination from '../components/Destination';
 
+import { DragCards } from '../components/DragCards ';
+
 
 function Home() {
   return (
@@ -21,7 +23,8 @@ function Home() {
        />
 
       <Destination/>
-       <Carrosel/>
+      <Carrosel/>
+      
 
      
   
