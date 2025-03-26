@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Carrosel from '../components/Carrosel';
+import Destination from '../components/Destination';
 
 
 function Home() {
@@ -19,7 +20,10 @@ function Home() {
          url="/"
        />
 
+      <Destination/>
        <Carrosel/>
+
+     
   
 
        

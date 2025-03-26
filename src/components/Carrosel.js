@@ -15,7 +15,7 @@ import slide_image4 from "../assets/travel4.jpg";
 function Carrosel() {
   return (
     <div style={{ marginTop: "50px", padding: "20px" }}>
-      <h1>Anual Gallery</h1>
+      <h1 style={{ textAlign: "center" , marginBottom: "20px"}}>Gallery</h1>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]}
         navigation
@@ -25,7 +25,13 @@ function Carrosel() {
         effect="coverflow"
         centeredSlides={true}
         loop={true}
-        slidesPerView={3} // Adjust this for better visuals
+        slidesPerView={3} // Default for larger screens
+        breakpoints={{
+          // Adjust slidesPerView based on screen width
+          320: { slidesPerView: 1 }, // Mobile
+          768: { slidesPerView: 2 }, // Tablet
+          1024: { slidesPerView: 3 }, // Desktop
+        }}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
