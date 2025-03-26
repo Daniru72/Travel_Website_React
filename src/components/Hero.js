@@ -5,7 +5,7 @@ function Hero(props) {
   return (
     <div className={props.cName}>
 
-      <img alt="HerpImg"src={props.heroImg}/>
+      <img className='imghero' alt="HerpImg"src={props.heroImg}/>
    
         <div className='heroText'>
             <h1>{props.title}</h1>
