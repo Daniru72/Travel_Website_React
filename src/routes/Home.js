@@ -5,6 +5,8 @@ import Carrosel from "../components/Carrosel";
 import Destination from "../components/Destination";
 import Card from "../components/ImageCard";
 
+
+
 function Home() {
   return (
     <div>
@@ -83,6 +85,9 @@ function Home() {
     </div>
   </div>
 </div>
+
+
+
 
      
     </div>
