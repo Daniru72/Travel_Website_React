@@ -42,13 +42,5 @@ Trippy is a responsive travel website built with React. It allows users to explo
 - ### Responsive Design
 <img src="https://github.com/user-attachments/assets/33eccae1-a437-406e-af2e-982947901b6c" alt="product-detail" width="200">
 
-- ### Advanced Search
+- ### Responsive Nav
 <img src="https://github.com/user-attachments/assets/d1c29336-c3dc-4386-ae04-61182c8143aa" alt="AdvancedSearch1" width="200">
-
-
-
-- ### UserProfile
-<img src="https://github.com/user-attachments/assets/f09ea74c-9226-4e8f-ac4f-17a60ccd3ba1)" alt="UserProfile" width="400">
-
-- ### Add Product
-<img src="https://github.com/user-attachments/assets/4216a03b-71d0-41c1-b69c-11fe3b71d4ac)" alt="AddProducts" width="400">
