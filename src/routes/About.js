@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import ScrollCarousel from '../components/ScrollCarousel';
+import Footer from "../components/Footer";
 
 function About() {
   return (
@@ -14,7 +15,7 @@ function About() {
         text="We are a team of professionals"
       />
 
-       <ScrollCarousel/>
+       <Footer/>
     </div>
   );
 }
